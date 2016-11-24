@@ -96,6 +96,8 @@ li { margin-top: 0.5em;
 
 .post-info {
     float:right;
+    background-color: #f6f6f6;
+    border-radius: 5px;
     margin:10px;
     padding:5px;
 }
