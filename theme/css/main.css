@@ -251,7 +251,7 @@ img.left, figure.left {float: left; margin: 0 2em 2em 0;}
 }
 #featured figure img {display: block; float: right;}
 
-#featured h2 {color: #C74451; font-size: 1.714em; margin-bottom: 0.333em;}
+#featured h2 {color: #C5450E; font-size: 1.714em; margin-bottom: 0.333em;}
 #featured h3 {font-size: 1.429em; margin-bottom: .5em;}
 
 #featured h3 a:link, #featured h3 a:visited {color: #000305; text-decoration: none;}
@@ -401,7 +401,7 @@ li:last-child .hentry, #content > .hentry {border: 0; margin: 0;}
 	#posts-list .hentry {padding-left: 10px; position: relative;}
 	
 	#posts-list footer {
-		left: 10px;
+		right: 10px; /*zara*/
 		position: relative;
         float: left;
 		top: 0.5em;
