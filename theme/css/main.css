@@ -20,7 +20,7 @@ body {
     background: #F6f1d0;
     color: #000305;
     font-size: 87.5%; /* Base font size: 14px */
-    font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     line-height: 1.429;
     margin: 0;
     padding: 0;
@@ -39,14 +39,14 @@ h1 {
 	font-weight: 400;
 	line-height: 1.1;
 	margin-bottom: .8em;
-    font-family: 'Yanone Kaffeesatz', arial, serif;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 h2, h3, h4, h5, h6 {
         font-weight: 400;
         line-height: 1.1;
         margin-bottom: .8em;
-    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 h3, h4, h5, h6 { margin-top: .8em; }
@@ -251,7 +251,7 @@ img.left, figure.left {float: left; margin: 0 2em 2em 0;}
 }
 #featured figure img {display: block; float: right;}
 
-#featured h2 {color: #C5450E; font-size: 1.714em; margin-bottom: 0.333em;}
+#featured h2 {color: #6e5341; font-size: 1.714em; margin-bottom: 0.333em;}
 #featured h3 {font-size: 1.429em; margin-bottom: .5em;}
 
 #featured h3 a:link, #featured h3 a:visited {color: #000305; text-decoration: none;}
