@@ -1,11 +1,18 @@
-Title: Oh, what an interesting page this is!
+Title: New and interesting StoryBoard things
 Date: 2016/11/25
 
-I wonder what happens if I do the date like this?
+Last time, we posted about things that were the same. But StoryBoard exists because we needed something a bit different. Here are some of the features new in StoryBoard
 
-    here is some code
-    it doesn't look like code
-    but it totally is
+# This pretty picture
 
-In this sentence, `this` word is code.
 <img src="https://zarathecat.github.io/img/selfportrait-2.png"> 
+
+# API-first approach
+
+# Cats
+
+# Worklists
+
+# Complex Priority
+
+# Boards

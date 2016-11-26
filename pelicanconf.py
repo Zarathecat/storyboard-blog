@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 
 AUTHOR = u'The StoryBoard Team'
-SITENAME = u'StoryBoard Blog'
+SITENAME = u'The StoryBoard Blog'
 SITEURL = ''
 
 THEME = 'themes/storyboard-theme'
