@@ -3,8 +3,7 @@
 <head>
         <meta charset="utf-8" />
         <title>The StoryBoard Blog</title>
-        <link rel="stylesheet" href="https://zarathecat.github.io/storyboard-blog/theme/css/main.css" />
-        <link href="https://zarathecat.github.io/storyboard-blog/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="The StoryBoard Blog Atom Feed" />
+        <link rel="stylesheet" href="/theme/css/main.css" />
 
         <!--[if IE]>
             <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -13,114 +12,119 @@
 
 <body id="index" class="home">
         <header id="banner" class="body">
-                <h1><a href="https://zarathecat.github.io/storyboard-blog/">The StoryBoard Blog </a></h1>
+                <h1><a href="/">The StoryBoard Blog </a></h1>
                 <nav><ul>
-                    <li><a href="https://zarathecat.github.io/storyboard-blog/category/info.html">Info</a></li>
-                    <li><a href="https://zarathecat.github.io/storyboard-blog/category/misc.html">misc</a></li>
+                    <li><a href="/category/info.html">Info</a></li>
                 </ul></nav>
         </header><!-- /#banner -->
 
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="https://zarathecat.github.io/storyboard-blog/mapping-storyboard-concepts-to-launchpad-concepts.html">Mapping StoryBoard concepts to Launchpad concepts</a></h1>
+                    <h1 class="entry-title"><a href="/why-storyboard-for-openstack.html">Why StoryBoard for OpenStack ?</a></h1>
 <footer class="post-info">
-        <p class="published" title="2016-11-25T00:08:00+00:00">
-                Published: Fri 25 November 2016
+        <p class="published" title="2016-12-08T12:00:00+00:00">
+                Published: Thu 08 December 2016
         </p>
 
         <p class="vcard author">
-                By                         <a class="url fn" href="https://zarathecat.github.io/storyboard-blog/author/the-storyboard-team.html">The StoryBoard Team</a>
+                By                         <a class="url fn" href="/author/ttx.html">ttx</a>
         </p>
-<p>In <a href="https://zarathecat.github.io/storyboard-blog/category/misc.html">misc</a>.</p>
+<p>In <a href="/category/info.html">Info</a>.</p>
 
-</footer><!-- /.post-info --><p>The systems have many features in common. Sometimes these go by different names</p>
-<h1>Entity</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet sem ut urna faucibus efficitur. Mauris bibendum imperdiet metus vitae porta. Sed a iaculis risus. Nam a dolor massa. Nunc fringilla dignissim nisl, ornare dapibus ligula feugiat ac. Ut laoreet euismod est a pharetra. </p>
-<h2>Launchpad correlate</h2>
-<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse convallis cursus eleifend. Sed nibh turpis, blandit ac justo ut, egestas blandit dui. Cras luctus nec metus a blandit. Sed molestie, lacus vitae dignissim vestibulum, enim orci tincidunt erat, ac convallis diam dui sit amet lectus. Etiam vitae lorem vestibulum, gravida urna eu, facilisis odio.</p>
-<h1>Entity 2</h1>
-<p>Suspendisse viverra ex in lorem commodo ultricies. Vivamus quis viverra dui, id mattis enim. Maecenas mattis sollicitudin sapien, molestie sodales diam pulvinar sed. Vivamus blandit ut felis id congue. Nunc feugiat lobortis orci maximus congue. </p>
-<h2>lp correlate 2</h2>
-<p>Fusce eu arcu vehicula, pharetra neque quis, rutrum leo. Curabitur vulputate dignissim pulvinar. Sed vitae laoreet nunc. Nullam efficitur gravida accumsan. Nam porta lorem lorem. Fusce metus neque, varius finibus nunc id, vulputate pharetra erat. Curabitur convallis nisi lectus, eu commodo eros fermentum vitae. Aliquam suscipit, nibh vulputate feugiat dignissim, nulla arcu tempor enim, et rhoncus diam sapien at tellus.</p>
-<h1>Entity 3</h1>
-<ul>
-<li>
-<p>thing</p>
-</li>
-<li>
-<p>thing</p>
-</li>
-<li>
-<p>thing</p>
-</li>
-</ul>
-<h2>lp correlate the third</h2>
-<ul>
-<li>thing thing thing</li>
-</ul>
-<hr />
-<p>So that's that!</p>                </article>
+</footer><!-- /.post-info --><p>The StoryBoard project was started a few years ago while we were looking
+for (and failing to find) alternatives to Launchpad. Now that we are getting
+closer to being able to roll out StoryBoard for task tracking across OpenStack
+projects, it's not useless to come back to what motivated this project in the
+first place. We are used to Launchpad after all, and it served us well. Why
+change ?</p>
+<h2>Workarounds</h2>
+<p>One thing to remember as we start discussing this is how much we worked
+around Launchpad's limitations. It's difficult to use Launchpad to organize
+our work, so we all used a variety of other tools to do that. I witnessed
+this first-hand while doing release management: teams would use Trello boards,
+etherpads or Google docs to maintain unwieldy lists of out-of-sync links to
+RC1 bugs and reviews, because Launchpad "priorities" and milestone targeting
+were not exactly cutting it. We got used to those workarounds to the point
+where we don't see them anymore, but that doesn't mean we should forever
+renounce having everything in one tool. Another issue is that every team
+would use its own set of workarounds, making it hard to discover. For someone
+working on multiple teams, those ad-hoc workarounds made it very difficult
+to have visibility inside the processes of each team.</p>
+<h2>Going beyond Launchpad's limits</h2>
+<p>We originally chose Launchpad because it's a great tool to track tasks across
+a complex community. The concept of Bugs being project-neutral but having a
+number of tasks affecting different projects is perfect: you can describe a
+single problem you are trying to solve and then list all the tasks affecting
+all the teams that will need to coordinate fully solve it. Most other trackers
+maintain stronger isolation between "projects", which make this kind of
+coordination harder. Launchpad worked well for us for a while. But as we
+added more projects, the list of tasks grew, and we discovered that Launchpad
+did not exactly handle that well for bugs with, say, more than 10 tasks. The UI
+would constantly hit timeouts which would prevent you from editing the status
+of any of those tasks. As a result, coordination on complex tasks moved to
+other tracking solutions like etherpads or git documents. There is nothing
+fundamentally complex in handling bugs with 50 tasks, though, and StoryBoard
+does not have the same limitation. It replicates the Bug/Task concept (we
+call bugs "stories" so that they can be used for more than just bugs) but
+without the complex data model and interactions that plagued Launchpad's
+performance when handling them.</p>
+<h2>API-first</h2>
+<p>The main issue we have with Launchpad is its API. It doesn't reflect all
+the features of the web UI, nor does it expose the full data model. You can
+propose fixes to exhibit those (as I did for pieces of the blueprint data
+model), but that doesn't change the fact that it's not API-first, so you are
+always playing catch-up. The other thing is that the API also happens to be
+barely usable. I mentioned above that the UI would frequently timeout when
+manipulating bugs with a large number of tasks, but the corresponding API
+calls would also timeout and fail whenever you manipulated large bugs. That
+made most scripts very brittle and almost unusable in automation. The API
+is important, because if there is a strong API you can work around any UI
+limitation, and deeply automate your tasks. StoryBoard is API-first: the web
+UI is actually a JavaScript static page making REST calls to an OpenStack-like
+API server. You can actually do more with the API than with the UI, and the UI
+is just one possible way to use the API.</p>
+<h2>Not being stuck with UbuntuOne</h2>
+<p>Launchpad uses UbuntuOne OpenID for authentication, and you can't use
+anything else. Since we required it for Launchpad, we ended up using it as
+authentication for most of the upstream development properties:
+review.openstack.org, wiki.openstack.org... But OpenStack also has its own
+OpenID authentication (OpenStackID), used in your Foundation profile, which
+you use for most of the downstream activities (registering to summit, voting
+for Foundation individual members etc.). That creates a number of issues when
+we need to connect those identities, like for example to know who signed the
+CLA. A single identity would solve that. StoryBoard accepts any OpenID
+provider: it uses UbuntuOne currently but can easily be switched to
+OpenStackID authentication whenever we are ready.</p>
+<h2>Why not push modifications upstream and/or run our own ?</h2>
+<p>Now the question is, couldn't we just improve Launchpad so that it suits our
+needs, rather than reinvent the wheel by writing our own ? It is, after all,
+developed under AGPLv3. We can (and some of us did) push a number of changes
+to Launchpad. The issue is we are now hitting opinionated changes (like
+wanting to use the Bugs backend for features, instead of the Blueprint
+backend), or complex ones (like solving the whole data model issue that
+triggers those damn timeouts). Without upstream support this is likely to
+be an impossible task, and the bugs we filed over time did not exactly
+generate much upstream excitement. We could fork it, modify it and run our
+own... but Launchpad is notoriously difficult to run as a standalone
+instance -- we happen to have a lot of ex-Launchpad devs in the OpenStack
+community, and they all advised us against trying that path.</p>
+<h2>So where does that leave us ?</h2>
+<p>We spent years evaluating alternatives. We created a set of requirements, and
+no existing solution offered them all. An experimental OpenStack infra project,
+called StoryBoard, was started based on those requirements. But it went slow
+and we continued to consider alternatives. We came very close to implementing
+one such alternative solution (Maniphest) but it was missing one of our key
+requirements (an API-first design) and their developers were not really
+interested in bending their product to support our (admittedly specific) use
+case.</p>
+<p>Fast-forward to today, where there is an organization outside of OpenStack
+using StoryBoard, interested in supporting it in the future, and willing to
+help with getting the must-have features we may still be missing. It feels
+like this option has the most potential to become the one and unique task
+tracker across OpenStack projects, so we are now reaching out to power users
+to identify and cover all those must-haves before starting any large-scale
+migration.</p>                </article>
             </aside><!-- /#featured -->
-                <section id="content" class="body">
-                    <h1>Other articles</h1>
-                    <hr />
-                    <ol id="posts-list" class="hfeed">
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="https://zarathecat.github.io/storyboard-blog/new-and-interesting-storyboard-things.html" rel="bookmark"
-                           title="Permalink to New and interesting StoryBoard things">New and interesting StoryBoard things</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <p class="published" title="2016-11-25T00:00:00+00:00">
-                Published: Fri 25 November 2016
-        </p>
-
-        <p class="vcard author">
-                By                         <a class="url fn" href="https://zarathecat.github.io/storyboard-blog/author/the-storyboard-team.html">The StoryBoard Team</a>
-        </p>
-<p>In <a href="https://zarathecat.github.io/storyboard-blog/category/misc.html">misc</a>.</p>
-
-</footer><!-- /.post-info -->                <p>Last time, we posted about things that were the same. But StoryBoard exists because we needed something a bit different. Here are some of the features new in StoryBoard</p>
-<h1>This pretty picture</h1>
-<p><img src="https://zarathecat.github.io/img/selfportrait-2.png"> </p>
-<h1>API-first approach</h1>
-<h1>Cats</h1>
-<h1>Worklists</h1>
-<h1>Complex Priority</h1>
-<h1>Boards</h1>
-                <a class="readmore" href="https://zarathecat.github.io/storyboard-blog/new-and-interesting-storyboard-things.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="https://zarathecat.github.io/storyboard-blog/the-cross-project-task-tracker.html" rel="bookmark"
-                           title="Permalink to The Cross-Project Task-Tracker!">The Cross-Project Task-Tracker!</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <p class="published" title="2016-11-24T19:09:00+00:00">
-                Published: Thu 24 November 2016
-        </p>
-
-        <p class="vcard author">
-                By                         <a class="url fn" href="https://zarathecat.github.io/storyboard-blog/author/the-storyboard-team.html">The StoryBoard Team</a>
-        </p>
-<p>In <a href="https://zarathecat.github.io/storyboard-blog/category/info.html">Info</a>.</p>
-
-</footer><!-- /.post-info -->                <p>StoryBoard is a task-tracking system designed for cross-project efforts!</p>
-<p>Here are some things about it!</p>
-<h1>It's API-driven</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed eros sed arcu dictum convallis non convallis nulla. Vivamus varius, diam at auctor lobortis, augue massa iaculis magna, quis tempor sapien sem ...</p>
-                <a class="readmore" href="https://zarathecat.github.io/storyboard-blog/the-cross-project-task-tracker.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-                </ol><!-- /#posts-list -->
-                </section><!-- /#content -->
         <section id="extras" class="body">
                 <div class="blogroll">
                         <h2>links</h2>
@@ -132,13 +136,6 @@
                             <li><a href="https://www.openstack.org/">OpenStack</a></li>
                         </ul>
                 </div><!-- /.blogroll -->
-                <div class="social">
-                        <h2>social</h2>
-                        <ul>
-                            <li><a href="https://zarathecat.github.io/storyboard-blog/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
-
-                        </ul>
-                </div><!-- /.social -->
         </section><!-- /#extras -->
 
         <footer id="contentinfo" class="body">
